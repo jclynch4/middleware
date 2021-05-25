@@ -35,6 +35,10 @@ nav ul { color: #145A32;
 		padding-left: 0;
 		font-size: 1.3em;
 }
+nav ul li {
+	margin-bottom: 1em;
+}
+
 main { background-color: #FFFFFF;
 	  padding: 1px 20px 20px 30px;
 	  margin-left: 190px;
@@ -126,6 +130,23 @@ footer { font-size: 75%;
          background-repeat: no-repeat;
          background-size: 5% 40%;
          height: 75px; }
-}
+
 dt { color: #613F0A; }
 
+form {
+	background-color: whitesmoke;
+}
+.formColumn
+{
+    float: left;
+    width: 50%;
+}
+
+.submitButton {
+	display: block;
+	border: 0;
+	background-color: lightgreen;
+	width: 50%;
+	height: 5vh;
+	margin: auto;
+}
