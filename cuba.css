@@ -105,8 +105,8 @@ main { background-color: #FFFFFF;
 			background-repeat: no-repeat;
 		
 }
-#people { height: 300px;
-			margin-left: 490px;
+#people { height: 500px;
+			margin-left: 290px;
 			margin-right: 290px;
             background-image: url(people.jpg);
 			background-size: 100% 100%;
