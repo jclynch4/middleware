@@ -113,9 +113,9 @@ main { background-color: #FFFFFF;
 			background-repeat: no-repeat;
 		}
 		
-#Marti { height: 300px;
-			margin-left: 140px;
-			margin-right: 540px;
+#Marti { height: 500px;
+			margin-left: 290px;
+			margin-right: 290px;
             background-image: url(Marti.jpg);
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
