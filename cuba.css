@@ -51,7 +51,7 @@ main { background-color: #FFFFFF;
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
 }
-#roomview { height: 700px;
+#roomview { height: 800px;
 			margin-left: 10px;
 			margin-right: 10px;
             background-image: url(roomview.jpg);
