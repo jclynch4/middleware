@@ -90,24 +90,24 @@ main { background-color: #FFFFFF;
 		
 }
 #pool1 { height: 700px;
-			margin-left: 1px;
-			margin-right: 1px;
+			margin-left: 150px;
+			margin-right: 150px;
             background-image: url(pool1.jpg);
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
 		
 }
 #dolphins { height: 700px;
-			margin-left: 1px;
-			margin-right: 1px;
+			margin-left: 150px;
+			margin-right: 150px;
             background-image: url(dolphins.jpg);
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
 		
 }
 #people { height: 500px;
-			margin-left: 290px;
-			margin-right: 290px;
+			margin-left: 200px;
+			margin-right: 200px;
             background-image: url(people.jpg);
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
