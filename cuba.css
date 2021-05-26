@@ -67,9 +67,9 @@ main { background-color: #FFFFFF;
 			background-repeat: no-repeat;
 				
 }
-#river { height: 300px;
-			margin-left: 290px;
-			margin-right: 10px;
+#river { height: 500px;
+			margin-left: 700px;
+			margin-right: 1px;
             background-image: url(river.jpg);
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
