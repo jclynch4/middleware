@@ -44,14 +44,14 @@ main { background-color: #FFFFFF;
 	  margin-left: 5px;
       display: block;
 }
-#palms { height: 450px;
+#palms { height: 600px;
 			margin-left: 190px;
 			margin-right: 190px;
             background-image: url(UNADJUSTEDNONRAW_thumb_e.jpg);
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
 }
-#roomview { height: 800px;
+#roomview { height: 900px;
 			margin-left: 10px;
 			margin-right: 10px;
             background-image: url(roomview.jpg);
