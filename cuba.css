@@ -89,6 +89,15 @@ main { background-color: #FFFFFF;
 			background-repeat: no-repeat;
 		
 }
+#dolphins { height: 700px;
+			margin-left: 1px;
+			margin-right: 1px;
+            background-image: url(dolphins.jpg);
+			 url(dolphins.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		
+}
 #people { height: 300px;
 			margin-left: 490px;
 			margin-right: 290px;
