@@ -89,6 +89,14 @@ main { background-color: #FFFFFF;
 			background-repeat: no-repeat;
 		
 }
+#pool1 { height: 700px;
+			margin-left: 1px;
+			margin-right: 1px;
+            background-image: url(pool1.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		
+}
 #dolphins { height: 700px;
 			margin-left: 1px;
 			margin-right: 1px;
