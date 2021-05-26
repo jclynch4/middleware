@@ -59,9 +59,9 @@ main { background-color: #FFFFFF;
 			background-repeat: no-repeat;
 		
 }
-#beach { height: 150px;
+#beach { height: 500px;
 			margin-left: 1px;
-			margin-right: 600px;
+			margin-right: 700px;
             background-image: url(Beach.jpg);
 			background-size: 100% 100%;
 			background-repeat: no-repeat;
