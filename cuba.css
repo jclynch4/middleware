@@ -68,10 +68,10 @@ main { background-color: #FFFFFF;
 	  margin-left: 1px;
       display: block;
 }
-#logo { height: 50px;
+#logo { height: 30px;
 	position: fixed;
-	top: 0.1;
-	left: 0.5;
+	top: 0;
+	left: 0.1;
 }
 #palms { height: 600px;
 			margin-left: 190px;
