@@ -20,24 +20,13 @@ header { background-color: #145A32;
 	  padding-top: 30px;
 	  padding-left: 3em;
 }
-nav { color: #145A32;
-		font-weight: bold;
-		 font-size: 120%;
-	 	padding: 1.5em;
-	 	float: left;
-	 	width: 160px;
+
+nav {
+	height: 10vh;
 }
-nav ul { color: #145A32;
-		font-weight: bold;
-		color: #B8DBED;
- 		list-style-type: none;
-        margin: 0;
-		padding-left: 0;
-		font-size: 1.3em;
-}
-nav ul li {
-	margin-bottom: 1em;
-}
+
+
+
 
 main { background-color: #FFFFFF;
 	  padding: 1px 20px 20px 30px;
