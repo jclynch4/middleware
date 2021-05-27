@@ -69,7 +69,6 @@ main { background-color: #FFFFFF;
       display: block;
 }
 #logo { 
-	position: fixed;
 	top: 0;
 	left: 1;
 }
