@@ -70,7 +70,7 @@ main { background-color: #FFFFFF;
 }
 #logo { height: 50px;
 	position: fixed;
-	top: 10;
+	top: 0;
 	left: 10;
 }
 #palms { height: 600px;
