@@ -56,7 +56,12 @@ div.frame {
 	align-items: center;
 
 }
+div.video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
+}
 main { background-color: #FFFFFF;
 	  padding: 1px 20px 20px 30px;
 	  margin-left: 1px;
