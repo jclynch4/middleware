@@ -76,6 +76,10 @@ main { background-color: #FFFFFF;
 	 top: 0;
 	 left: 5;
 }
+#logo2 { position: fixed;
+	 botton: 0;
+	 left: 5;
+}
 #palms { height: 600px;
 			margin-left: 190px;
 			margin-right: 190px;
