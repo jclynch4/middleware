@@ -85,8 +85,8 @@ main { background-color: #FFFFFF;
 			background-repeat: no-repeat;
 				
 }
-#river { height: 500px;
-			margin-left: 700;
+#river { height: 700px;
+			margin-left: 700px;
 			margin-right: 1px;
             background-image: url(river.jpg);
 			background-size: 100% 100%;
