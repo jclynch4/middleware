@@ -62,16 +62,16 @@ div.video {
 	align-items: center;
 
 }
-#logo {
-	position: fixed;
-	top: 0;
-	left: 0;
 
-}
 main { background-color: #FFFFFF;
 	  padding: 1px 20px 20px 30px;
 	  margin-left: 1px;
       display: block;
+}
+#logo { height: 250px;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 #palms { height: 600px;
 			margin-left: 190px;
