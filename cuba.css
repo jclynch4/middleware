@@ -54,10 +54,7 @@ div.frame {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-div {
-	display: block;
-	float: left;
+
 }
 
 main { background-color: #FFFFFF;
