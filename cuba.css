@@ -70,8 +70,8 @@ main { background-color: #FFFFFF;
 }
 #logo { height: 50px;
 	position: fixed;
-	top: 2;
-	left: 2;
+	top: 0.1;
+	left: 0.5;
 }
 #palms { height: 600px;
 			margin-left: 190px;
