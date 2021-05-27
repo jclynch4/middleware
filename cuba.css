@@ -86,7 +86,7 @@ main { background-color: #FFFFFF;
 				
 }
 #river { height: 700px;
-			margin-left: 700px;
+			margin-left: 500px;
 			margin-right: 1px;
             background-image: url(river.jpg);
 			background-size: 100% 100%;
