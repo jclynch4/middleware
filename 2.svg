@@ -19,8 +19,9 @@
     </clipPath>
   </defs>
   <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
+    <rect width="114" height="67" fill="#161715"/>
     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_1)">
-      <g id="Ellipse_1-2" data-name="Ellipse 1" fill="#101110" stroke="#1f8251" stroke-width="2">
+      <g id="Ellipse_1-2" data-name="Ellipse 1" fill="#0c0f0c" stroke="#1f8251" stroke-width="2">
         <ellipse cx="57" cy="33.5" rx="57" ry="33.5" stroke="none"/>
         <ellipse cx="57" cy="33.5" rx="56" ry="32.5" fill="none"/>
       </g>
