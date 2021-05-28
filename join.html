@@ -62,23 +62,25 @@
   <a href="people.html"><b>ACTIVITIES</b></a> 
   <a href="origins.html"><b>ABOUT US</b></a> 
 </div>
+
+<h3>Think you would make a good addition to our team? Apply online today!</h3>
   <form action="">
     <div class="formColumn">
     <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br><br>
+    <input type="text" id="username" name="username" required><br><br>
     <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password"><br><br>
+    <input type="password" id="password" name="password" required><br><br>
     <label for="firstName">First Name:</label><br>
-    <input type="text" id="firstName" name="firstName"><br><br>
+    <input type="text" id="firstName" name="firstName" required><br><br>
     <label for="lastName">Last Name:</label><br>
-    <input type="text" id="lastName" name="lastName"><br><br>
+    <input type="text" id="lastName" name="lastName" required><br><br>
     <label for="gender">Gender:</label><br>
-    <input type="radio" id="male" name="gender" value="male">
+    <input type="radio" id="male" name="gender" value="male" required>
     <label for="male">Male</label><br>
-    <input type="radio" id="female" name="gender" value="female">
+    <input type="radio" id="female" name="gender" value="female" required>
     <label for="female">Female</label><br><br>
     <label for="birthday">Date of Birth:</label><br>
-    <input type="date" id="birthday" name="birthday" min="1900-01-01" max=""><br><br>
+    <input type="date" id="birthday" name="birthday" min="1900-01-01" max="" required><br><br>
     <label for="drop_zone">Resume:</label><br>
     <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
       <p>Drag a file to this drop zone</p>
@@ -86,11 +88,11 @@
     </div>
     <div class="formColumn">
     <label for="address">Address:</label><br>
-    <input type="text" id="address" name="address"><br><br>
+    <input type="text" id="address" name="address" required><br><br>
     <label for="fromCity">City:</label><br>
-    <input type="text" id="fromCity" name="fromCity"><br><br>
+    <input type="text" id="fromCity" name="fromCity" required><br><br>
     <label for="state">State:</label><br>
-    <select id="state" name="state">
+    <select id="state" name="state" required>
       <option value="AL">Alabama</option>
       <option value="AK">Alaska</option>
       <option value="AZ">Arizona</option>
@@ -144,13 +146,13 @@
       <option value="WY">Wyoming</option>
     </select>	<br><br>			        
     <label for="zip">Zip Code:</label><br>
-    <input type="number" id="zip" name="zip"><br><br>
+    <input type="number" id="zip" name="zip" required><br><br>
     <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br><br>
+    <input type="email" id="email" name="email" required><br><br>
     <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone" pattern="([0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+    <input type="tel" id="phone" name="phone" pattern="([0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
     <label for="country">Country of Origin:</label><br>
-    <select id="country" name="country">
+    <select id="country" name="country" required>
       <option value="Afghanistan">Afghanistan</option>
       <option value="Åland Islands">Åland Islands</option>
       <option value="Albania">Albania</option>
@@ -397,7 +399,7 @@
       <option value="Zimbabwe">Zimbabwe</option>
     </select><br><br><br><br><br>
   </div>
-    <button class="submitButton" type="button" name="submit" onclick="submitForm(this.form)">Submit</button>
+    <button class="submitButton" type="submit" name="submit" onclick="submitForm(this.form)">Submit</button>
   </form>
 <script>
   var today = new Date();
