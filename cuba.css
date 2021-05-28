@@ -77,7 +77,7 @@ main { background-color: #FFFFFF;
 	 left: 5;
 }
 #logo2 { position: fixed;
-	 botton: 0;
+	 bottom: 0;
 	 left: 5;
 }
 #palms { height: 600px;
@@ -222,3 +222,8 @@ form {
 .submitButton:active {
 	background-color: green;
 }
+
+#drop_zone {
+	border: 2px solid black;
+	width: 60%;
+  }
