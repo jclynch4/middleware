@@ -67,13 +67,12 @@ CREATE TABLE IF NOT EXISTS `rooms` (
 -- Constraints for table `applicants`
 
 ALTER TABLE `applicants`
-  ADD CONSTRAINT `applicants_ibfk_1` FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`);
+  ADD FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`);
 
 
 -- Constraints for table `reservation`
 
 ALTER TABLE `reservation`
-  ADD CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`Customer ID`) REFERENCES `customers` (`Customer ID`) ON DELETE CASCADE,
-  ADD CONSTRAINT `reservation_ibfk_2` FOREIGN KEY (`Room Number`) REFERENCES `rooms` (`Room Number`) ON DELETE CASCADE,
-  ADD CONSTRAINT `reservation_ibfk_3` FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`) ON DELETE CASCADE;
-COMMIT;
+  ADD FOREIGN KEY (`Customer ID`) REFERENCES `customers` (`Customer ID`) ON DELETE CASCADE,
+  ADD FOREIGN KEY (`Room Number`) REFERENCES `rooms` (`Room Number`) ON DELETE CASCADE,
+  ADD FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`) ON DELETE CASCADE;
