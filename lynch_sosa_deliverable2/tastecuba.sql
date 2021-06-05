@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 04, 2021 at 10:45 PM
--- Server version: 5.7.31
+-- Generation Time: Jun 05, 2021 at 02:44 AM
+-- Server version: 8.0.21
 -- PHP Version: 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -38,11 +38,11 @@ CREATE TABLE IF NOT EXISTS `applicants` (
   `Address` varchar(100) NOT NULL,
   `City` varchar(50) NOT NULL,
   `State` varchar(50) NOT NULL,
-  `Zip Code` int(5) NOT NULL,
+  `Zip Code` int NOT NULL,
   `Email` varchar(50) NOT NULL,
-  `Phone Number` int(11) NOT NULL,
+  `Phone Number` int NOT NULL,
   `Country Of Origin` varchar(50) NOT NULL,
-  `ID` int(7) NOT NULL,
+  `ID` int NOT NULL,
   KEY `ID` (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `applicants` (
 
 DROP TABLE IF EXISTS `customers`;
 CREATE TABLE IF NOT EXISTS `customers` (
-  `Customer ID` int(11) NOT NULL,
+  `Customer ID` int NOT NULL,
   `Address` varchar(50) NOT NULL,
   `Customer Name` varchar(50) NOT NULL,
   `Customer Last Name` varchar(50) NOT NULL,
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
   `First Name` varchar(50) NOT NULL,
   `Last Name` varchar(50) NOT NULL,
   `Email` varchar(50) NOT NULL,
-  `ID` int(7) NOT NULL AUTO_INCREMENT,
+  `ID` int NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -88,10 +88,10 @@ DROP TABLE IF EXISTS `reservation`;
 CREATE TABLE IF NOT EXISTS `reservation` (
   `Check In Date` date NOT NULL,
   `Check Out Date` date NOT NULL,
-  `Room Number` int(11) NOT NULL,
-  `Customer ID` int(11) NOT NULL,
-  `Reservation ID` int(11) NOT NULL,
-  `ID` int(7) NOT NULL,
+  `Room Number` int NOT NULL,
+  `Customer ID` int NOT NULL,
+  `Reservation ID` int NOT NULL,
+  `ID` int NOT NULL,
   PRIMARY KEY (`Reservation ID`),
   KEY `Room Number` (`Room Number`,`Customer ID`),
   KEY `reservation_ibfk_1` (`Customer ID`),
@@ -106,11 +106,11 @@ CREATE TABLE IF NOT EXISTS `reservation` (
 
 DROP TABLE IF EXISTS `rooms`;
 CREATE TABLE IF NOT EXISTS `rooms` (
-  `Room Number` int(11) NOT NULL,
-  `Floor` int(11) NOT NULL,
-  `No Of Beds` int(11) NOT NULL,
-  `Cost Per Night` int(11) NOT NULL,
-  `Room Service` int(7) NOT NULL,
+  `Room Number` int NOT NULL,
+  `Floor` int NOT NULL,
+  `No Of Beds` int NOT NULL,
+  `Cost Per Night` int NOT NULL,
+  `Room Service` int NOT NULL,
   PRIMARY KEY (`Room Number`),
   KEY `Room Service` (`Room Service`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -123,7 +123,9 @@ CREATE TABLE IF NOT EXISTS `rooms` (
 -- Constraints for table `applicants`
 --
 ALTER TABLE `applicants`
-  ADD CONSTRAINT `applicants_ibfk_1` FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`);
+  ADD CONSTRAINT `applicants_ibfk_1` FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`),
+  ADD CONSTRAINT `applicants_ibfk_2` FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`),
+  ADD CONSTRAINT `applicants_ibfk_3` FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`);
 
 --
 -- Constraints for table `reservation`
@@ -131,7 +133,10 @@ ALTER TABLE `applicants`
 ALTER TABLE `reservation`
   ADD CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`Customer ID`) REFERENCES `customers` (`Customer ID`) ON DELETE CASCADE,
   ADD CONSTRAINT `reservation_ibfk_2` FOREIGN KEY (`Room Number`) REFERENCES `rooms` (`Room Number`) ON DELETE CASCADE,
-  ADD CONSTRAINT `reservation_ibfk_3` FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`) ON DELETE CASCADE;
+  ADD CONSTRAINT `reservation_ibfk_3` FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`) ON DELETE CASCADE,
+  ADD CONSTRAINT `reservation_ibfk_4` FOREIGN KEY (`Customer ID`) REFERENCES `customers` (`Customer ID`) ON DELETE CASCADE,
+  ADD CONSTRAINT `reservation_ibfk_5` FOREIGN KEY (`Room Number`) REFERENCES `rooms` (`Room Number`) ON DELETE CASCADE,
+  ADD CONSTRAINT `reservation_ibfk_6` FOREIGN KEY (`ID`) REFERENCES `employees` (`ID`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
